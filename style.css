@@ -1,0 +1,254 @@
+/* Font Imports */
+@font-face {
+    font-family: 'Montserrat', sans-serif;                                                                        
+    src: url('https://fonts.cdnfonts.com/css/montserrat');
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;                                                                                                                    
+    src: url('https://fonts.cdnfonts.com/css/poppins');
+}
+
+/* Global Styles */
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header & Navigation */
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo{
+    width: 50%;
+}
+
+.navbar_item{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+    color: black;
+    font-size: 16px;
+}
+
+.navbar_item:hover {
+    color: red;
+    transition: color 0.3s ease;
+}
+
+/* Hero Section */
+.hero_section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url("./image/51c51a7e2807a7d0fadb9f1c2a8b1ef6.jpeg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.hero_section h1{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.hero_section h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.hero_section h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+/* Buttons */
+.btn_primary{
+    width: 180px;
+    height: 60px;
+    border: 1px solid red;
+    border-radius: 30px;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    background-color: red;
+    margin-bottom: 40px;
+    filter: drop-shadow(#B7322733 0px 10px 30px);
+}
+
+.btn_primary:hover{
+    background-color: rgb(188, 6, 6);
+    border: rgb(188, 6, 6);
+}
+
+.btn_secondary{
+    width: 180px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    background-color: transparent;
+    margin-bottom: 40px;
+    filter: drop-shadow(#B7322733 0px 10px 30px);
+}
+
+.btn_primary:hover, .btn_secondary:hover {
+    transition: all 0.3s ease;
+}
+
+.btn_secondary:hover{
+    background-color: white;
+    color: red;
+}
+
+.btn_hero{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_btn{
+    width: 175.5px;
+    height: 48.28px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    background-color: red;
+    margin-bottom: 40px;
+}
+
+/* App Section */
+.app_img {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+.account_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info{
+    margin-left: -400px;
+}
+
+/* Varieties Section */
+.varieties_section .info{
+    margin-left: 0;
+    margin-right: -400px;
+}
+
+/* Common Title Style */
+.title{
+    font-size: 44px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1px;
+    margin-bottom: 50px;                
+}
+
+/* Info Section Typography */
+.info h2{
+    font-size: 40px;
+    text-align: left;
+    margin-top: -20px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+
+.info h3{
+    font-size: 24px;
+    text-align: left;
+    margin-top: 10px;
+    color: red;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.info p{
+    font-size: 24px;
+    text-align: left;
+    margin-top: -10px;
+    font-weight: 100;
+}
+
+/* Form Elements */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 436px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 436px;
+    height: 200px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact_section{
+    width: 100%;
+    margin-left: 30px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+}
